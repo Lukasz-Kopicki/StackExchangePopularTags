@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <div class="text-center">
+        <div class="card">
+            <h5 class="card-header">1000 popularnych tagów</h5>
+            <div class="card-body">
+                <table id="tags-table" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Nazwa Tagu</th>
+                            <th>Ilość użycia</th>
+                            <th>Popualrność</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function () {
+
+        $('#tags-table').DataTable({
+            columns: [
+                { data: 'name', type: 'string' },
+                { data: 'count', type: 'number' },
+                {
+                    data: 'Popularity',
+                    render: function (data) {
+                        return `<p>${data.toFixed(2)} %</p>`;
+                    }
+                },
+            ],
+
+            ajax: {
+                url: "/Home/PopulateTagTable"
+            }
+        });
+    });
+</script>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BE2FlzmT8+dlfFvzhIYQmxL6cjT4Q+evAMosw0o29fUpDe4CUxjGikycjbAvUMJpAqsU+1gwkhAwYsJYq4mzhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Projekty\\RozmowyRekr\\LukaszProjekt-master\\LukaszProjekt-master\\StackExchangePopularTags\\StackExchangePopularTags.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
